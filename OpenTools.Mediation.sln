@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
+VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenMediator", "OpenMediator\OpenMediator.csproj", "{D1694FCC-D018-8873-3A69-27C75F06D538}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenToolkit", "OpenMediator\OpenToolkit.csproj", "{D1694FCC-D018-8873-3A69-27C75F06D538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenMediator.Tests", "OpenMediator.Tests\OpenMediator.Tests.csproj", "{F6A386A3-6C74-774E-6D90-FB732AF7BC87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenToolkit.Tests", "OpenMediator.Tests\OpenToolkit.Tests.csproj", "{F6A386A3-6C74-774E-6D90-FB732AF7BC87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

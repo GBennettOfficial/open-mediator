@@ -1,8 +1,10 @@
-﻿namespace OpenMediator.Tests;
+﻿using OpenToolkit.Abstractions;
 
-public class MockService : IRequestHandler<MockRequest, MockResponse>
+namespace OpenToolkit.Tests;
+
+public class MockService : IProcessRequestAsync<MockRequest, MockResponse>
 {
-    public Task<MockResponse> Handle(MockRequest request, CancellationToken ct)
+    public Task<MockResponse> ProcessRequestAsync(MockRequest request, CancellationToken ct)
     {
         return Task.Run(() =>
         {

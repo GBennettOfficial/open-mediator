@@ -1,4 +1,6 @@
-﻿namespace OpenMediator.Tests;
+﻿using OpenToolkit.Abstractions;
+
+namespace OpenToolkit.Tests;
 
 public class MockRequest : IRequest<MockResponse>
 {

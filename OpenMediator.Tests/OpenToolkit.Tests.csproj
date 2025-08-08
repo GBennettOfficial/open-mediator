@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenMediator\OpenMediator.csproj" />
+    <ProjectReference Include="..\OpenMediator\OpenToolkit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

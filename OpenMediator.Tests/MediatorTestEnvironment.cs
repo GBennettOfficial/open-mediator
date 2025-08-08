@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OpenToolkit.Abstractions;
+using OpenToolkit.Services;
 
-namespace OpenMediator.Tests
+namespace OpenToolkit.Tests
 {
     public class OpenMediatorTestEnvironment : IDisposable
     {
@@ -11,8 +13,8 @@ namespace OpenMediator.Tests
             _host = Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
-                    services.UseOpenMediator();
-                    services.AddScoped<IRequestHandler<MockRequest, MockResponse>, MockService>();
+                    services.AddScoped<ISendRequestAsync, RequestSenderAsync>();
+                    services.AddScoped<IProcessRequestAsync<MockRequest, MockResponse>, MockService>();
                 })
                 .Build();
             _host.Start();
